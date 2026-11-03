@@ -1,0 +1,103 @@
+/* SIJAK - area admin. Memakai token warna dari style.css (--teal, --forest, --cu, --ivory, ...). Semua kelas berawalan "a-". */
+body[data-page="admin"] { background: var(--ivory) }
+
+.a-top { background: var(--forest); color: #fff; position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 0 rgba(255,255,255,.08) }
+.a-wrap { max-width: 1240px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; gap: 22px }
+.a-top .pbrand { color: #fff; flex: none }
+.a-top .mono.logo { width: 38px; height: 38px }
+.a-nav { display: flex; gap: 2px; flex: 1; flex-wrap: wrap }
+.a-nav a { color: #d6e2de; padding: 8px 11px; border-radius: 6px; font-size: 14px; font-weight: 600; position: relative }
+.a-nav a:hover { background: rgba(255,255,255,.08); text-decoration: none; color: #fff }
+.a-nav a.on { color: #fff }
+.a-nav a.on:after { content: ""; position: absolute; left: 11px; right: 11px; bottom: 0; height: 2px; background: var(--cu); border-radius: 2px }
+.a-user { display: flex; gap: 10px; align-items: center; flex: none; font-size: 13px }
+.a-user > span { color: var(--sage) }
+.a-user a { color: #d6e2de }
+.a-user form { margin: 0 }
+.a-ham { display: none; margin-left: auto; border: 0; background: none; color: #fff; padding: 6px; cursor: pointer }
+
+.a-main { max-width: 1240px; margin: 0 auto; padding: 28px 24px 56px }
+.a-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 20px }
+.a-head p { margin: 6px 0 0; color: var(--mu) }
+.a-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.a-actions form { margin: 0 }
+
+.a-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 22px }
+.a-m { background: #fff; border: 1px solid var(--bd); border-left: 4px solid var(--cu); border-radius: var(--r); padding: 16px 18px; box-shadow: var(--sh) }
+.a-m b { display: block; font-size: 30px; line-height: 1.1; color: var(--teal); font-weight: 800 }
+.a-m span { color: var(--mu); font-size: 13px }
+
+.a-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px }
+.a-main .card h2 { margin-bottom: 12px }
+
+.a-tw { overflow-x: auto; background: #fff; border: 1px solid var(--bd); border-radius: var(--r); box-shadow: var(--sh); margin-bottom: 14px }
+.a-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 720px }
+.a-table th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--mu); background: #faf9f4; padding: 11px 14px; border-bottom: 1px solid var(--bd); white-space: nowrap }
+.a-table td { padding: 12px 14px; border-bottom: 1px solid var(--bd); vertical-align: top }
+.a-table tr:last-child td { border-bottom: 0 }
+.a-table td small { display: block; color: var(--mu) }
+.a-table .aksi { white-space: nowrap; text-align: right }
+.a-table .aksi form { display: inline }
+.a-table .aksi .btn { margin-left: 4px }
+.a-empty { padding: 28px; text-align: center; color: var(--mu) }
+
+.a-filter { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 16px; background: #fff; border: 1px solid var(--bd); border-radius: var(--r); padding: 14px 16px }
+.a-filter label { flex: 1; min-width: 150px }
+.a-filter .btn { height: 41px }
+
+.a-form { max-width: 820px; display: grid; gap: 16px }
+.a-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px }
+.a-full { grid-column: 1 / -1 }
+.a-form label small { font-weight: 400; color: var(--mu) }
+.a-err { color: #8f3b34; margin: 4px 0 0; font-size: 13px; font-weight: 500 }
+.a-chk { display: flex; gap: 10px; align-items: center; font-weight: 600 }
+.a-chk input { width: auto; margin: 0 }
+.a-bar { display: flex; gap: 10px; flex-wrap: wrap }
+textarea { min-height: 110px; resize: vertical }
+input.bad, select.bad { border-color: #B5524B }
+
+.a-badge-ya { background: #e3ede0; color: #3a6540 }
+.a-badge-tdk { background: #ecece6; color: var(--mu) }
+
+.a-dl { display: grid; grid-template-columns: 180px 1fr; gap: 10px 16px; margin: 0 }
+.a-dl dt { font-weight: 600; color: var(--mu) }
+.a-dl dd { margin: 0 }
+
+.a-docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; margin-bottom: 14px }
+.a-doc { background: #fff; border: 1px solid var(--bd); border-radius: var(--r); overflow: hidden; display: grid; grid-template-rows: auto 1fr; box-shadow: var(--sh) }
+.a-doc .th { aspect-ratio: 4/3; background: #e9eee9; display: block }
+.a-doc .th img { width: 100%; height: 100%; object-fit: cover; display: block }
+.a-doc .tb { padding: 12px 14px; display: grid; gap: 6px; align-content: start }
+.a-doc .tb b { color: var(--tx); font-size: 14px; line-height: 1.3; word-break: break-word }
+.a-doc .tb small { color: var(--mu) }
+.a-doc .tb .a-actions { margin-top: 4px }
+#pratinjau img { max-width: 260px; border-radius: 6px; border: 1px solid var(--bd); margin-top: 8px }
+#pratinjau { color: var(--mu); font-size: 13px; margin-top: 6px }
+
+.a-sum { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px }
+.a-sum .badge { font-size: 13px; padding: 5px 12px }
+.a-print { display: none }
+
+@media (max-width: 980px) {
+    .a-ham { display: block }
+    .a-wrap { flex-wrap: wrap; gap: 8px 12px }
+    .a-nav, .a-user { display: none; width: 100% }
+    .nav-open .a-nav { display: flex; flex-direction: column }
+    .nav-open .a-user { display: flex; justify-content: space-between; padding-bottom: 8px }
+    .a-nav a.on:after { display: none }
+    .a-nav a.on { background: rgba(255,255,255,.1) }
+    .a-cols, .a-grid { grid-template-columns: 1fr }
+    .a-dl { grid-template-columns: 1fr }
+    .a-main { padding: 20px 16px 48px }
+}
+
+@media print {
+    .a-top, .a-noprint, .btn, #toasts, .skip { display: none !important }
+    body[data-page="admin"] { background: #fff }
+    .a-main { padding: 0; max-width: none }
+    .a-tw { border: 0; box-shadow: none; overflow: visible }
+    .a-table { min-width: 0; font-size: 11px }
+    .a-print { display: block; margin-bottom: 12px }
+    .a-print h1 { font-size: 18px }
+    .badge { border: 1px solid #999; background: #fff !important; color: #000 !important }
+}

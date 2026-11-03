@@ -1,0 +1,13 @@
+/.phpunit.cache
+/vendor
+/node_modules
+.env
+.env.backup
+.phpunit.result.cache
+/storage/*.key
+/public/hot
+/public/storage
+/public/uploads/dokumentasi/*
+!/public/uploads/dokumentasi/.gitkeep
+/.idea
+/.vscode
