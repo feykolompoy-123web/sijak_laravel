@@ -5330,9 +5330,7 @@ body.login label {
 }
 
 
-/* =====================================
-   HERO SIJAK - PENGATURAN TAMBAHAN
-===================================== */
+/*HERO SIJAK - PENGATURAN TAMBAHAN*/
 
 /* Foto Hero memenuhi layar dan tetap di tempat saat halaman digulir */
 .hero {
@@ -5479,4 +5477,40 @@ body.login label {
     padding: 0;
     border-radius: 0;
 }
-    
+
+
+/* =====================================================
+   HEADER HALAMAN LAIN (Jadwal, Kalender, Dokumentasi, dll)
+   Dibuat hijau tua permanen, sama seperti Beranda saat di-scroll
+   ===================================================== */
+   @media (min-width: 901px) {
+
+    body:not([data-page="home"]) .ph0,
+    body:not([data-page="home"]) .ph0.scrolled {
+        background: rgba(6, 56, 61, .92) !important;
+        -webkit-backdrop-filter: blur(14px);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(255, 255, 255, .12) !important;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, .18) !important;
+    }
+
+    body:not([data-page="home"]) .ph0::before {
+        opacity: 0 !important;
+    }
+
+    body:not([data-page="home"]) .ph0 .pbrand,
+    body:not([data-page="home"]) .pnav > a:not(.btn),
+    body:not([data-page="home"]) .pnav > a.on:not(.btn) {
+        color: #fff !important;
+    }
+
+    body:not([data-page="home"]) .pnav .btn.pri {
+        background: transparent !important;
+        border: 1px solid rgba(255, 255, 255, .55) !important;
+        color: #fff !important;
+    }
+
+    body:not([data-page="home"]) .pnav .btn.pri:hover {
+        background: rgba(255, 255, 255, .14) !important;
+    }
+}
