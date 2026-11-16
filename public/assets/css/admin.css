@@ -101,3 +101,13 @@ input.bad, select.bad { border-color: #B5524B }
     .a-print h1 { font-size: 18px }
     .badge { border: 1px solid #999; background: #fff !important; color: #000 !important }
 }
+
+/* Menu admin lebih ringkas supaya muat satu baris */
+.a-wrap {
+    gap: 16px;
+}
+
+.a-nav a {
+    padding: 8px 9px;
+    white-space: nowrap;
+}
