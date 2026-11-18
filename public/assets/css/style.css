@@ -5523,3 +5523,50 @@ body.login label {
 .hcard .empty b {
     color: var(--tx);
 }
+
+/* Baris agenda: status di kanan atas, tombol "Lihat Detail" kecil di bawahnya */
+@media (min-width: 761px) {
+    .hero .hcard .ag,
+    .cols .ag,
+    .blk2 .ag {
+        grid-template-columns: 58px minmax(0, 1fr) auto;
+        grid-template-areas:
+            "tgl isi status"
+            "tgl isi tombol";
+        align-items: center;
+        row-gap: 8px;
+    }
+
+    .hero .hcard .ag > .db,
+    .cols .ag > .db,
+    .blk2 .ag > .db {
+        grid-area: tgl;
+        align-self: start;
+    }
+
+    .hero .hcard .ag > .ab,
+    .cols .ag > .ab,
+    .blk2 .ag > .ab {
+        grid-area: isi;
+    }
+
+    .hero .hcard .ag > .badge,
+    .cols .ag > .badge,
+    .blk2 .ag > .badge {
+        grid-area: status;
+        justify-self: end;
+        align-self: end;
+    }
+
+    .hero .hcard .ag > .btn,
+    .cols .ag > .btn,
+    .blk2 .ag > .btn {
+        grid-area: tombol;
+        justify-self: end;
+        align-self: start;
+        white-space: nowrap;
+        padding: 6px 14px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
